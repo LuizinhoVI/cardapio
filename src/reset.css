@@ -21,7 +21,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     border: solid rgb(110, 110, 110) 1px;
     position: relative;
-    top: 5vh;
+    /* top: 800px; */
     /* left: 5vw; */
 }
 
