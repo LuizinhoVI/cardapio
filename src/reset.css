@@ -3,9 +3,20 @@
     margin: 0;
 }
 
-div {}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid blue 1px;
+    position: relative;
+    top: 5vh;
+    /* left: 5vw; */
+}
 
-div>img {
-    width: 90vw;
-    height: 90vh;
+section {
+    border: solid rgb(179, 174, 174) 1px;
+    position: relative;
+    width: 20vw;
+    height: 70vh;
+    left: 12vh;
+    border-radius: 10px;
 }
