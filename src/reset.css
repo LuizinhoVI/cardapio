@@ -1,6 +1,10 @@
-html {
+* {
     border: 0;
     margin: 0;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .comida {
@@ -40,8 +44,9 @@ main>button {
 
 .cardapio {
     position: relative;
-    top: 80px;
+    /* top: 85px; */
     text-align: center;
+    font-size: 22px;
 }
 
 .icon {
