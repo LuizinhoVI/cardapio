@@ -14,7 +14,7 @@
         position: relative;
         top: 0;
         left: 0;
-        height: 80vh;
+        height: 550px;
     }
     #buttom {
         position: relative;
@@ -25,7 +25,7 @@
     }
     .icon {
         position: relative;
-        top: 40px;
+        top: 5px;
         left: 10px;
     }
     .icon>img {
