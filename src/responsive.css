@@ -83,3 +83,54 @@
                         left: 110px;
                     }
                 }
+                
+                @media only screen and (min-width:420px) {
+                    .perfil-inst {
+                        position: absolute;
+                        border: solid rgb(33, 121, 21) 1px;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        top: 65px;
+                        left: 120px;
+                    }
+                    .perfil-inst-nome {
+                        position: absolute;
+                        top: 70px;
+                        left: 160px;
+                    }
+                }
+                
+                @media screen and (max-width:375px) {
+                    .perfil-inst {
+                        position: absolute;
+                        border: solid rgb(33, 121, 21) 1px;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        top: 65px;
+                        left: 100px;
+                    }
+                    .perfil-inst-nome {
+                        position: absolute;
+                        top: 70px;
+                        left: 140px;
+                    }
+                }
+                
+                @media screen and (max-width:320px) {
+                    .perfil-inst {
+                        position: absolute;
+                        border: solid rgb(33, 121, 21) 1px;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        top: 65px;
+                        left: 70px;
+                    }
+                    .perfil-inst-nome {
+                        position: absolute;
+                        top: 70px;
+                        left: 110px;
+                    }
+                }
