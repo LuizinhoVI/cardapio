@@ -31,7 +31,7 @@
                     }
                     .icon {
                         position: relative;
-                        top: -60px;
+                        top: -140px;
                         /* left: 10px; */
                         height: 30px;
                         /* border: solid red 1px; */
@@ -65,7 +65,7 @@
                     }
                     .cardapio {
                         position: relative;
-                        top: 75px;
+                        top: 70px;
                         text-align: center;
                     }
                     .perfil-inst {
