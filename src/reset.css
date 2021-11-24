@@ -39,13 +39,13 @@ main>button {
 
 .cardapio {
     position: relative;
-    top: 80px;
+    top: 100px;
     text-align: center;
 }
 
 .icon {
     position: relative;
-    top: 6px;
+    top: 40px;
     left: 10px;
 }
 

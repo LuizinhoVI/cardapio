@@ -3,9 +3,9 @@
         border: solid rgb(179, 174, 174) 1px;
         position: relative;
         width: 200px;
-        height: 40vh;
+        height: 260px;
         left: 0;
-        top: 60px;
+        top: 30px;
     }
     main {
         display: grid;
@@ -22,5 +22,14 @@
         width: 90px;
         padding: 5px;
         font-size: 13px;
+    }
+    .icon {
+        position: relative;
+        top: 40px;
+        left: 10px;
+    }
+    .icon>img {
+        width: 20px;
+        height: auto;
     }
 }
