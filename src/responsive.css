@@ -2,7 +2,7 @@
     section {
         border: solid rgb(179, 174, 174) 1px;
         position: relative;
-        width: 50vw;
+        width: 200px;
         height: 40vh;
         left: 0;
         top: 60px;
@@ -12,7 +12,7 @@
         grid-template-columns: auto;
         justify-content: center;
         position: relative;
-        top: 5vh;
+        top: 0;
         left: 0;
         height: 80vh;
     }
