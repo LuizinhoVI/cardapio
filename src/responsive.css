@@ -5,6 +5,7 @@
         width: 50vw;
         height: 40vh;
         left: 0;
+        top: 60px;
     }
     main {
         display: grid;
@@ -15,10 +16,11 @@
         left: 0;
         height: 80vh;
     }
-    main>button {
+    #buttom {
         position: relative;
-        height: 40px;
-        width: 40px;
-        font-size: 12px;
+        height: 30px;
+        width: 90px;
+        padding: 5px;
+        font-size: 13px;
     }
 }

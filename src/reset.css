@@ -3,10 +3,19 @@
     margin: 0;
 }
 
+.comida {
+    position: relative;
+    top: 20px;
+    max-width: 100%;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: solid blue 1px;
+    border: solid rgb(110, 110, 110) 1px;
     position: relative;
     top: 5vh;
     /* left: 5vw; */
@@ -19,4 +28,22 @@ section {
     height: 70vh;
     left: 12vh;
     border-radius: 10px;
+}
+
+main>button {
+    position: relative;
+    height: 40px;
+    width: 50px;
+    font-size: 11px;
+}
+
+.cardapio {
+    position: relative;
+    top: 120px;
+    text-align: center;
+}
+
+.icon>img {
+    width: 20px;
+    height: 10px;
 }
