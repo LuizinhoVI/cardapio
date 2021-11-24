@@ -5,6 +5,7 @@
 
 a:link {
     text-decoration: none;
+    color: black;
 }
 
 .comida {
@@ -19,7 +20,7 @@ a:link {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: solid rgb(110, 110, 110) 1px;
+    /* border: solid rgb(110, 110, 110) 1px; */
     position: relative;
     /* top: 800px; */
     /* left: 5vw; */
