@@ -8,55 +8,15 @@ a:link {
     color: black;
 }
 
-.comida {
-    position: relative;
-    top: 40px;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* border: solid rgb(110, 110, 110) 1px; */
-    position: relative;
-    /* top: 800px; */
-    /* left: 5vw; */
+    border: solid red 1px;
 }
 
-section {
-    border: solid rgb(179, 174, 174) 1px;
+.intro {
+    border: solid blue 1px;
+    color: red;
+    font-size: 30px;
+    width: 100%;
     position: relative;
-    width: 20vw;
-    /* height: 70vh; */
-    left: 12vh;
-    border-radius: 10px;
-    box-shadow: 0px 0px 4px 0px;
-}
-
-main>button {
-    position: relative;
-    height: 40px;
-    width: 50px;
-    font-size: 11px;
-}
-
-.cardapio {
-    position: relative;
-    /* top: 85px; */
-    text-align: center;
-    font-size: 22px;
-}
-
-.icon {
-    position: relative;
-    top: 40px;
-    left: 10px;
-}
-
-.icon>img {
-    width: 20px;
-    height: auto;
+    margin-top: 50vh;
 }
