@@ -19,4 +19,15 @@ main {
     width: 100%;
     position: relative;
     margin-top: 50vh;
+    animation-name: inicio;
+    animation-duration: 6s;
+}
+
+@keyframes inicio {
+    from {
+        font-size: 10px;
+    }
+    to {
+        font-size: 50px;
+    }
 }
