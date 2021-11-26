@@ -1,6 +1,7 @@
 * {
     border: 0;
     margin: 0;
+    font-family: cardapio;
 }
 
 a:link {
@@ -9,25 +10,39 @@ a:link {
 }
 
 main {
-    border: solid red 1px;
+    /* border: solid red 1px; */
+    height: 100vh;
+}
+
+@font-face {
+    font-family: cardapio;
+    src: url(font/KGHAPPY.ttf);
+}
+
+section {
+    width: 100vw;
+}
+
+.foto {
+    width: 100vw;
 }
 
 .intro {
-    border: solid blue 1px;
+    /* border: solid blue 1px; */
     color: red;
-    font-size: 30px;
+    font-size: 5vw;
     width: 100%;
     position: relative;
     margin-top: 50vh;
+    transform: translateY(-50%);
     animation-name: inicio;
     animation-duration: 6s;
+    display: block;
+    text-shadow: 0px 3px 0px black;
 }
 
 @keyframes inicio {
-    from {
-        font-size: 10px;
-    }
-    to {
-        font-size: 50px;
+    100% {
+        font-size: 14vw;
     }
 }
