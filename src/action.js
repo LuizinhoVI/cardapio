@@ -9,5 +9,5 @@ $(function() {
         $(".cardapio").css("display", "block");
 
 
-    }, 5900);
+    }, 2900);
 });
