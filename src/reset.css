@@ -4,6 +4,10 @@
     font-family: cardapio;
 }
 
+body {
+    margin: 0;
+}
+
 a:link {
     text-decoration: none;
     color: black;
@@ -44,9 +48,9 @@ section {
 }
 
 .foto {
-    width: 28vw;
+    width: 20vw;
     animation-name: foto;
-    animation-duration: 2s;
+    animation-duration: 1s;
     cursor: pointer;
     /* border: solid red 1px; */
     border-radius: 20px;
@@ -57,7 +61,7 @@ section {
         width: 0vw;
     }
     100% {
-        width: 28vw;
+        width: 20vw;
     }
 }
 
@@ -69,17 +73,51 @@ section {
 .produtos {
     /* border: solid red 1px; */
     display: grid;
-    justify-content: space-between;
-    grid-template-columns: 30vw 30vw 30vw;
-    width: 100%;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    /* width: 100%; */
     position: relative;
-    padding: 10px;
+    padding: 5px;
+}
+
+.produtos>div>p {
+    font-size: 2vw;
+}
+
+.categoria {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.categoria>div>img {
+    width: 30vw;
+    border-radius: 50px;
+    width: 20vw;
+    animation-name: categoria;
+    animation-duration: 2s;
+    cursor: pointer;
+    /* border: solid red 1px; */
+    border-radius: 20px;
+}
+
+@keyframes categoria {
+    0% {
+        width: 0vw;
+    }
+    100% {
+        width: 20vw;
+    }
+}
+
+.categoria>div>p {
+    font-size: 2vw;
 }
 
 footer {
     position: fixed;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     height: 3vh;
     background-color: black;
     color: white;
