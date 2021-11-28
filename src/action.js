@@ -13,3 +13,10 @@ function gelados() {
     $(".gelados").css("color", "white");
     $(".categoria").css("display", "none");
 }
+
+function refri() {
+    $(".refri").css("display", "grid");
+    $("body").css("background", "red");
+    $(".refri").css("color", "white");
+    $(".categoria").css("display", "none");
+}

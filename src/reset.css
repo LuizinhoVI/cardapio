@@ -91,9 +91,8 @@ section {
 }
 
 .categoria>div>img {
-    width: 30vw;
     border-radius: 50px;
-    width: 20vw;
+    width: 35vw;
     animation-name: categoria;
     animation-duration: 2s;
     cursor: pointer;
@@ -106,12 +105,17 @@ section {
         width: 0vw;
     }
     100% {
-        width: 20vw;
+        width: 35vw;
     }
 }
 
 .categoria>div>p {
     font-size: 2vw;
+}
+
+.menu {
+    position: relative;
+    margin-top: 10%;
 }
 
 footer {
@@ -124,4 +128,10 @@ footer {
     font-size: 1vw;
     text-align: center;
     padding: 5px;
+}
+
+@media screen and (max-width: 530px) {
+    .menu {
+        margin-top: 20%;
+    }
 }
