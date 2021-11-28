@@ -28,7 +28,7 @@ section {
     color: red;
     font-size: 5vw;
     width: 100%;
-    position: relative;
+    position: fixed;
     margin-top: 50vh;
     transform: translateY(-50%);
     animation-name: inicio;
@@ -44,10 +44,12 @@ section {
 }
 
 .foto {
-    width: 30vw;
+    width: 28vw;
     animation-name: foto;
     animation-duration: 2s;
+    cursor: pointer;
     /* border: solid red 1px; */
+    border-radius: 20px;
 }
 
 @keyframes foto {
@@ -55,7 +57,7 @@ section {
         width: 0vw;
     }
     100% {
-        width: 30vw;
+        width: 28vw;
     }
 }
 
@@ -69,4 +71,19 @@ section {
     display: grid;
     justify-content: space-between;
     grid-template-columns: 30vw 30vw 30vw;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 3vh;
+    background-color: black;
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+    padding: 5px;
 }
