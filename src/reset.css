@@ -44,9 +44,10 @@ section {
 }
 
 .foto {
-    width: 100vw;
+    width: 30vw;
     animation-name: foto;
     animation-duration: 2s;
+    /* border: solid red 1px; */
 }
 
 @keyframes foto {
@@ -54,11 +55,18 @@ section {
         width: 0vw;
     }
     100% {
-        width: 100vw;
+        width: 30vw;
     }
 }
 
 .entrada {
     border: solid black 1px;
     border-radius: 10px;
+}
+
+.produtos {
+    border: solid red 1px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 30vw 30vw 30vw;
 }
