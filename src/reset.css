@@ -67,7 +67,7 @@ section {
 }
 
 .produtos {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: grid;
     justify-content: space-between;
     grid-template-columns: 30vw 30vw 30vw;
