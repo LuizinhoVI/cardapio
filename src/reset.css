@@ -25,6 +25,7 @@ main {
 
 section {
     width: 100vw;
+    background-image: linear-gradient(to bottom, white, rgb(160, 44, 44));
 }
 
 .intro {
@@ -48,12 +49,21 @@ section {
 }
 
 .foto {
-    width: 20vw;
+    width: 13vw;
     animation-name: foto;
     animation-duration: 1s;
     cursor: pointer;
     /* border: solid red 1px; */
-    border-radius: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 5px 0px black;
+}
+
+.zom {
+    transition: scale(1.1), 1.0s;
+}
+
+.zom:hover {
+    transform: scale(1.1);
 }
 
 @keyframes foto {
@@ -71,28 +81,34 @@ section {
 }
 
 .produtos {
-    /* border: solid red 1px; */
+    /* border: ridge red 5px; */
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 3px 0px red; */
+    /* background-image: linear-gradient(to bottom, white, rgb(160, 44, 44)); */
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
-    /* width: 100%; */
+    grid-template-columns: repeat(3, 1fr);
+    width: 90vw;
+    left: 5vw;
     position: relative;
     padding: 5px;
 }
 
 .produtos>div>p {
     font-size: 2vw;
+    position: relative;
 }
 
 .categoria {
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .categoria>div>img {
     border-radius: 50px;
-    width: 35vw;
+    width: 15vw;
     animation-name: categoria;
     animation-duration: 2s;
     cursor: pointer;
@@ -105,33 +121,55 @@ section {
         width: 0vw;
     }
     100% {
-        width: 35vw;
+        width: 15vw;
     }
 }
 
 .categoria>div>p {
     font-size: 2vw;
+    position: relative;
 }
 
 .menu {
     position: relative;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 footer {
-    position: fixed;
+    position: relative;
+    top: 5px;
     bottom: 0;
     width: 100%;
-    height: 3vh;
+    height: 4vh;
     background-color: black;
     color: white;
-    font-size: 1vw;
+    font-size: 10px;
     text-align: center;
     padding: 5px;
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 600px) {
     .menu {
         margin-top: 20%;
+    }
+    .categoria>div>img {
+        border-radius: 50px;
+        width: 35vw;
+        height: auto;
+        animation-name: categoria;
+        animation-duration: 2s;
+        cursor: pointer;
+        /* border: solid red 1px; */
+        border-radius: 20px;
+    }
+    .foto {
+        width: 20vw;
+    }
+    .produtos>div>p {
+        font-size: 2vw;
+        top: 10px;
+    }
+    footer {
+        font-size: 5px;
     }
 }

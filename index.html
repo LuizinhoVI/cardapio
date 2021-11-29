@@ -28,13 +28,13 @@
 
     <main>
 
-        <section align="center" class="intro" style="display: block; ">
+        <section align="center" class="intro" style="display: none; ">
             <div>
                 BEM VINDO
             </div>
         </section>
 
-        <section align=" center " class="cardapio " style="display: none; ">
+        <section align=" center " class="cardapio " style="display: block; ">
             <div style="display: block;">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid ">
@@ -157,7 +157,7 @@
 
             <nav class="menu">
                 <!-- <img src="src/img/cardapio.png " class="foto " alt=" "> -->
-                <div class="categoria">
+                <div class="categoria" style="display: none;">
                     <div onclick="refri()">
                         <img src="src/img/bebidas.png" class=" border" alt="">
                         <p for="">Bebidas</p>
@@ -178,63 +178,63 @@
 
                 <div class="produtos salgados" style="display: none;">
 
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/modelo.jpg" class="foto" alt="">
                         <p for="">Bigburgo $4,00</p>
                     </div>
@@ -242,27 +242,27 @@
 
                 <div class="produtos gelados" style="display: none;">
 
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/sorvete/Brigadeiro.webp" class="foto" alt="">
                         <p for="">Brigadeiro </p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/sorvete/chicabon.webp" class="foto" alt="">
                         <p for="">chicabon</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/sorvete/Eskibon Clássico.webp" class="foto" alt="">
                         <p for="">Eskibon Clássico</p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/sorvete/Kibonbon Coco.webp" class="foto" alt="">
                         <p for="">Kibonbon Coco </p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/sorvete/Kibonbon Morango.webp" class="foto" alt="">
                         <p for="">Kibonbon Morango </p>
                     </div>
-                    <div class="">
+                    <div class="zom">
                         <img src="src/img/sorvete/Mini Eskibon.webp" class="foto" alt="">
                         <p for="">Mini Eskibon </p>
                     </div>
@@ -270,34 +270,62 @@
 
                 </div>
 
-                <div class="produtos refri" style="display: none;">
+                <div class="produtos refri" style="display: grid;">
 
-                    <div class="">
-                        <img src="src/img/refri/cocacola.png" width="50" class="foto" alt="">
-                        <p for="">cocacola </p>
+                    <div class="zom" onclick="foto_click()">
+                        <img src="src/img/refri/cocacola.png" class="foto" alt="">
+                        <p for="">cocacola 1L</p>
                     </div>
-                    <div class="">
-                        <img src="src/img/refri/fanta.jpg" width="50" class="foto" alt="">
-                        <p for="">fanta </p>
+                    <div class="zom">
+                        <img src="src/img/refri/fanta.jpg" class="foto" alt="">
+                        <p for="">fanta 1L</p>
                     </div>
-                    <div class="">
-                        <img src="src/img/refri/guarana.png" width="50" class="foto" alt="">
-                        <p for="">guarana </p>
-                    </div>
-                    <div class="">
-                        <img src="src/img/refri/refris.png" width="50" class="foto" alt="">
-                        <p for="">refris </p>
-                    </div>
-                    <div class="">
-                        <img src="src/img/refri/sprit lata.png" width="50" class="foto" alt="">
-                        <p for="">sprit lata </p>
-                    </div>
-                    <div class="">
-                        <img src="src/img/refri/sprit.png" width="50" class="foto" alt="">
-                        <p for="">Sprit </p>
+                    <div class="zom">
+                        <img src="src/img/refri/guarana.png" class="foto" alt="">
+                        <p for="">guarana 1L</p>
                     </div>
 
 
+                    <div class="zom">
+                        <img src="src/img/refri/sprit.png" class="foto" alt="">
+                        <p for="">Sprit 1L</p>
+                    </div>
+                    <div class="zom">
+                        <img src="src/img/refri/pepsi.jpg" class="foto" alt="">
+                        <p for="">Pepsi 1L </p>
+                    </div>
+                    <div class="zom">
+                        <img src="src/img/refri/fantauva.jpg" class="foto" alt="">
+                        <p for="">fanta uva 1L </p>
+                    </div>
+
+
+                    <div class="zom">
+                        <img src="src/img/refri/coca cola lata.jpg" class="foto" alt="">
+                        <p for="">coca cola 350ml </p>
+                    </div>
+                    <div class="zom">
+                        <img src="src/img/refri/fanta lata.jpg" class="foto" alt="">
+                        <p for="">fanta 350ml</p>
+                    </div>
+                    <div class="zom">
+                        <img src="src/img/refri/guaranan lata.jpg" class="foto" alt="">
+                        <p for="">guaranan 350ml </p>
+                    </div>
+                    <div class="zom">
+                        <img src="src/img/refri/pepsi lata.jpg" class="foto" alt="">
+                        <p for="">pepsi 350ml </p>
+                    </div>
+                    <div class="zom">
+                        <img src="src/img/refri/fanta uva latinha.jpg" class="foto" alt="">
+                        <p for="">fanta uva 350ml </p>
+                    </div>
+                    <div class="zom">
+                        <div>
+                            <img src="src/img/refri/sprit lata.png" class="foto" alt="">
+                        </div>
+                        <p for="">sprit 350ml</p>
+                    </div>
 
                 </div>
 
@@ -306,11 +334,13 @@
         </section>
 
         <section>
-            <!-- <footer>
+            <footer>
                 <p align="center">
-                    COPYRIGHT © 2020 - C.P - Todos os direitos reservados
+                    COPYRIGHT © 2021 - C.P - Todos os direitos reservados por:
+                    <a href="">Code programador</a>
                 </p>
-            </footer> -->
+
+            </footer>
         </section>
 
 
