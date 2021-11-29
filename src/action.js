@@ -1,30 +1,12 @@
-// $(function() {
-//     setTimeout(function() {
+$(function() {
+    setTimeout(function() {
 
-//         $(".intro").css("display", "none");
-//         $(".cardapio").css("display", "block");
-//     }, 2900);
-// });
-
-
-// function gelados() {
-//     $(".gelados").css("display", "grid");
-//     $("body").css("background", "red");
-//     $(".gelados").css("color", "white");
-//     $(".categoria").css("display", "none");
-// }
-
-// function refri() {
-//     $(".refri").css("display", "grid");
-//     // $("body").css("background", "red");
-//     $(".refri").css("color", "black");
-//     $(".categoria").css("display", "none");
-// }
-
-
-
-
-
+        $(".intro").css("display", "none");
+        $("footer").css("display", "block");
+        $(".cardapio").css("display", "block");
+        $("main").css("background-image", " linear-gradient(to bottom, white, rgb(160, 44, 44))");
+    }, 2900);
+});
 
 
 function gelados() {
@@ -39,7 +21,16 @@ function refri() {
     // $("body").css("background", "red");
     $(".refri").css("color", "black");
     $(".categoria").css("display", "none");
+    $(".nometema").css("display", "block");
 }
+
+
+
+
+
+
+
+
 numero = 1;
 
 function foto_click() {

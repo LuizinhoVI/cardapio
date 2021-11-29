@@ -16,7 +16,7 @@ a:link {
 main {
     /* border: solid red 1px; */
     width: 100vw;
-    background-image: linear-gradient(to bottom, white, rgb(160, 44, 44));
+    /* background-image: linear-gradient(to bottom, white, rgb(160, 44, 44)); */
     height: 100vh;
 }
 

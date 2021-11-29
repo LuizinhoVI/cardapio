@@ -24,21 +24,21 @@
 <body>
 
 
-    <section align="center" class="intro" style="display: none; ">
-        <div>
-            BEM VINDO
-        </div>
-    </section>
+
 
     <main>
+        <section align="center" class="intro" style="display: grid; ">
+            <div>
+                BEM VINDO
+            </div>
+        </section>
 
 
-
-        <section align=" center " class="cardapio " style="display: block; ">
-            <div style="display: block;">
+        <section align=" center " class="cardapio " style="display: none; ">
+            <div style="display:block;">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid ">
-                        <a class="navbar-brand " href="#">site teste</a>
+                        <a class="navbar-brand " href="#">CODE PRO...</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -87,16 +87,16 @@
                             </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <li>
-                                            <a class="dropdown-item" href="#"></a>
+                                            <a class="dropdown-item" href="#">Casquinha $7,00</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#"></a>
+                                            <a class="dropdown-item" href="#">1 bola $7,00</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#"></a>
+                                            <a class="dropdown-item" href="#">2 bola $7,00</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#"></a>
+                                            <a class="dropdown-item" href="#">Colegial $7,00</a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item" href="#"></a>
@@ -156,10 +156,10 @@
             </div>
 
 
-            <div>
+            <div class="fototema" style="display:  none;">
 
                 <div style="background-color: white;">
-                    <img src="src/img/refri/bebida.gif" class="nome-categoria" width="150" alt="">
+                    <img src="src/img/refri/bebida.gif" class="foto" class="nome-categoria" width="150" alt="">
 
                 </div>
 
@@ -168,9 +168,9 @@
 
 
             <nav class="menu">
-                <h4 class="nometema">Bebidas</h4>
+                <h4 class="nometema" style="display: none;">Bebidas</h4>
                 <!-- <img src="src/img/cardapio.png " class="foto " alt=" "> -->
-                <div class="categoria" style="display: none;">
+                <div class="categoria" style="display: grid;">
                     <div onclick="refri()">
                         <img src="src/img/bebidas.png" class=" border" alt="">
                         <p for="">Bebidas</p>
@@ -283,7 +283,7 @@
 
                 </div>
 
-                <div class="produtos refri" style="display: grid;">
+                <div class="produtos refri" style="display: none;">
 
                     <div class="zom" onclick="foto_click()">
                         <img src="src/img/refri/cocacola.png" class="foto" alt="">
@@ -354,7 +354,7 @@
     </main>
 
 
-    <footer>
+    <footer style="display: none;">
         <p align="center">
             COPYRIGHT © 2021 - C.P - Todos os direitos reservados por:
             <a href="">Code programador</a>
