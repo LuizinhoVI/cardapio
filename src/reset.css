@@ -17,7 +17,7 @@ main {
     /* border: solid red 1px; */
     width: 100vw;
     background-image: linear-gradient(to bottom, white, rgb(160, 44, 44));
-    height: 1200px;
+    height: 100vh;
 }
 
 @font-face {
@@ -139,7 +139,7 @@ section {
 footer {
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 4vh;
     background-color: black;
     color: white;
