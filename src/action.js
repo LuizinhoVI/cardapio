@@ -4,7 +4,8 @@ $(function() {
         $(".intro").css("display", "none");
         $("footer").css("display", "block");
         $(".cardapio").css("display", "block");
-        $("main").css("background-image", " linear-gradient(to bottom, white, rgb(160, 44, 44))");
+
+        // $("main").css("background-image", " linear-gradient(to bottom, white, rgb(160, 44, 44))");
     }, 2900);
 });
 
@@ -17,6 +18,7 @@ function gelados() {
 }
 
 function refri() {
+    $(".fototema").css("display", "block");
     $(".refri").css("display", "grid");
     // $("body").css("background", "red");
     $(".refri").css("color", "black");
