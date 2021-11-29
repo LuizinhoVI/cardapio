@@ -15,7 +15,8 @@ a:link {
 
 main {
     /* border: solid red 1px; */
-    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, white, rgb(160, 44, 44));
 }
 
 @font-face {
@@ -25,7 +26,6 @@ main {
 
 section {
     width: 100vw;
-    background-image: linear-gradient(to bottom, white, rgb(160, 44, 44));
 }
 
 .intro {
@@ -171,5 +171,8 @@ footer {
     }
     footer {
         font-size: 5px;
+    }
+    .nome-categoria {
+        width: 60px;
     }
 }
