@@ -47,11 +47,15 @@ function doces() {
 contador_pedido = 0;
 
 function mais() {
-
-    $('#numero-add[1]').text(contador_pedido++)
+    var mostrar = document.getElementById("numero-add");
+    $(mostrar).text(contador_pedido++)
+    console.log(mostrar[1].innerHTML)
 }
 
 function menos() {
+
+
+
 
     if (contador_pedido > 0) {
         $("#numero-add").text(contador_pedido -= 1)
