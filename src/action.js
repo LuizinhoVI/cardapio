@@ -26,6 +26,24 @@ function refri() {
     $(".nometema").css("display", "block");
 }
 
+function salgados() {
+    $(".fototema").css("display", "block");
+    $(".salgados").css("display", "grid");
+    // $("body").css("background", "red");
+
+    $(".categoria").css("display", "none");
+    // $(".nometema").css("conte", "block");
+}
+
+function doces() {
+    $(".fototema").css("display", "block");
+    $(".doces").css("display", "grid");
+    // $("body").css("background", "red");
+
+    $(".categoria").css("display", "none");
+    // $(".nometema").css("conte", "block");
+}
+
 
 
 
