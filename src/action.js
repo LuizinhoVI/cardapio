@@ -44,11 +44,11 @@ function doces() {
     // $(".nometema").css("conte", "block");
 }
 
-contador_pedido = 0
+contador_pedido = 0;
 
 function mais() {
 
-    $('#numero-add').text(contador_pedido++)
+    $('#numero-add[1]').text(contador_pedido++)
 }
 
 function menos() {

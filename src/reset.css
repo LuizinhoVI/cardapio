@@ -94,7 +94,7 @@ section {
     /* background-image: linear-gradient(to bottom, white, rgb(160, 44, 44)); */
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: repeat(3, 100px); */
     width: 90vw;
     left: 5vw;
