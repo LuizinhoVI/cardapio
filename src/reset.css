@@ -95,6 +95,7 @@ section {
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 100px); */
     width: 90vw;
     left: 5vw;
     position: relative;
@@ -151,7 +152,25 @@ section {
 
 #btn {
     font-size: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.mais-e-menos {
+    /* border: solid red 1px; */
+    position: relative;
+    top: -2px;
+}
+
+#numero-add {
+    border: solid red 1px;
+    position: relative;
+    top: 50%;
+    transform: translateY(25%);
+}
+
+.escolha {
+    position: relative;
+    top: -5px;
 }
 
 footer {

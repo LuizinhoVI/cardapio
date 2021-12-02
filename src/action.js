@@ -44,7 +44,19 @@ function doces() {
     // $(".nometema").css("conte", "block");
 }
 
+contador_pedido = 0
 
+function mais() {
+
+    $('#numero-add').text(contador_pedido++)
+}
+
+function menos() {
+
+    if (contador_pedido > 0) {
+        $("#numero-add").text(contador_pedido -= 1)
+    }
+}
 
 
 
