@@ -1,21 +1,23 @@
-// $(function() {
-//     setTimeout(function() {
+$(function() {
+    setTimeout(function() {
 
-//         $(".intro").css("display", "none");
-//         $("footer").css("display", "block");
-//         $(".cardapio").css("display", "block");
+        $(".intro").css("display", "none");
+        $("footer").css("display", "block");
+        $(".cardapio").css("display", "block");
+        $(".categoria").css("display", "grid");
+        $(".navegador").css("display", "grid");
 
-//         // $("main").css("background-image", " linear-gradient(to bottom, white, rgb(160, 44, 44))");
-//     }, 2900);
-// });
+        // $("main").css("background-image", " linear-gradient(to bottom, white, rgb(160, 44, 44))");
+    }, 2900);
+});
 
 
-// function gelados() {
-//     $(".gelados").css("display", "grid");
-//     $("body").css("background", "red");
-//     $(".gelados").css("color", "white");
-//     $(".categoria").css("display", "none");
-// }
+function gelados() {
+    $(".gelados").css("display", "grid");
+    $("body").css("background", "red");
+    $(".gelados").css("color", "white");
+    $(".categoria").css("display", "none");
+}
 
 function refri() {
     $(".fototema").css("display", "block");
@@ -46,19 +48,43 @@ function doces() {
 
 contador_pedido = 0;
 
+
+
+// mostrar = document.getElementById("numero-add");
+
+
 function mais() {
-    var mostrar = document.getElementById("numero-add");
-    $(mostrar).text(contador_pedido++)
-    console.log(mostrar[1].innerHTML)
-}
+
+    var btn_mais = document.getElementsByClassName("btn+");
+    var mostrar = document.getElementsByClassName("btn-contator");
+
+
+    for (var i = 0; i < mostrar.length; i++) {
+
+
+        $(mostrar[i]).text(contador_pedido++);
+    }
+
+};
+
+
+
+
+
 
 function menos() {
 
 
 
+    var btn_mais = document.getElementsByClassName("btn+");
+    var mostrar = document.getElementsByClassName("btn-contator");
 
-    if (contador_pedido > 0) {
-        $("#numero-add").text(contador_pedido -= 1)
+
+
+    for (var i = 0; i < mostrar.length; i++) {
+
+
+        $(mostrar[i]).text(contador_pedido--);
     }
 }
 

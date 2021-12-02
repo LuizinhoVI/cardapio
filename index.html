@@ -27,15 +27,15 @@
 
 
     <main>
-        <section align="center" class="intro" style="display: none; ">
+        <section align="center" class="intro" style="display: block; ">
             <div>
                 BEM VINDO
             </div>
         </section>
 
 
-        <section align=" center " class="cardapio " style="display: block; ">
-            <div style="display:block;" class="navegador">
+        <section align=" center " class="cardapio" style="display: grid; ">
+            <div style="display:none;" class="navegador">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid ">
                         <a class="navbar-brand " href="#">CODE PRO...</a>
@@ -189,15 +189,15 @@
                     </div>
                 </div>
 
-                <div class="produtos salgados" style="display: ;">
+                <div class="produtos salgados" style="display:none ;">
 
                     <div class="zom">
                         <img src="src/img/salgados/coxinha.png" class="foto" alt="">
                         <p for="">coxinha </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" id="btn+" onclick="mais()" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -222,9 +222,9 @@
                         <p for="">pastel </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
-                                <button type="button" id="btn-" class="btn btn-outline-danger">-</button>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                <button type="button" onclick="menos()" id="btn-" class="btn btn- btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
                                 <select name="" id="">
@@ -243,15 +243,15 @@
                 </div>
                 </div>
 
-                <div class="produtos gelados" style="display: ;">
+                <div class="produtos gelados" style="display:none ;">
 
                     <div class="zom">
                         <img src="src/img/sorvete/Brigadeiro.webp" class="foto" alt="">
                         <p for="">Brigadeiro </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -266,8 +266,8 @@
                         <p for="">chicabon</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -282,8 +282,8 @@
                         <p for="">Eskibon Clássico</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -298,8 +298,8 @@
                         <p for="">Kibonbon Coco </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -314,8 +314,8 @@
                         <p for="">Kibonbon Morango </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -330,8 +330,8 @@
                         <p for="">Mini Eskibon </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -346,8 +346,8 @@
                         <p for="">Mini Eskibon </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -362,8 +362,8 @@
                         <p for="">sorvete de casquinha </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -377,15 +377,15 @@
 
                 </div>
 
-                <div class="produtos refri" style="display: ;">
+                <div class="produtos refri" style="display: none;">
 
                     <div class="zom" onclick="foto_click()">
                         <img src="src/img/refri/coca cola.png" class="foto" alt="">
                         <p for="">cocacola 1L</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -394,15 +394,14 @@
                             </div>
 
                         </div>
-
                     </div>
                     <div class="zom">
                         <img src="src/img/refri/fanta.jpg" class="foto" alt="">
                         <p for="">fanta 1L</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -417,8 +416,8 @@
                         <p for="">guarana 1L</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -435,8 +434,8 @@
                         <p for="">Sprit 1L</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -451,8 +450,8 @@
                         <p for="">Pepsi 1L </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -467,8 +466,8 @@
                         <p for="">fanta uva 1L </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -485,8 +484,8 @@
                         <p for="">coca cola 350ml </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -501,8 +500,8 @@
                         <p for="">fanta 350ml</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -517,8 +516,8 @@
                         <p for="">guaranan 350ml </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -533,8 +532,8 @@
                         <p for="">pepsi 350ml </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -549,8 +548,8 @@
                         <p for="">fanta uva 350ml </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -567,8 +566,8 @@
                         <p for="">sprit 350ml</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -585,8 +584,8 @@
                         <p for="">suco de maçã 250ml</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -601,8 +600,8 @@
                         <p for="">suco de laranja 250ml </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -617,8 +616,8 @@
                         <p for="">suco de goiaba 250ml</p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -633,8 +632,8 @@
                         <p for="">antarctica 1L </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -649,8 +648,8 @@
                         <p for="">Balde de Cerveja </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -666,8 +665,8 @@
                         <p for="">crystal 1L </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -682,8 +681,8 @@
                         <p for="">café 1L </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
@@ -698,8 +697,8 @@
                         <p for="">del valle maracujá 290ml </p>
                         <div>
                             <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn"> 0 </p>
+                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                <p id="numero-add" class="btn-contator btn"> 0 </p>
                                 <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
                             </div>
                             <div class="escolha">
