@@ -64,6 +64,11 @@ section {
     transition: scale(1.1), 1.0s;
 }
 
+.zom>div {
+    width: ;
+    /* border: solid red 1px; */
+}
+
 .zom:hover {
     transform: scale(1.1);
 }
@@ -93,7 +98,7 @@ section {
     width: 90vw;
     left: 5vw;
     position: relative;
-    padding: 5px;
+    padding: 10px;
 }
 
 .produtos>div>p {
@@ -142,6 +147,11 @@ section {
     position: relative;
     margin-top: 5%;
     margin-bottom: 50px;
+}
+
+#btn {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 footer {
