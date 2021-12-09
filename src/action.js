@@ -1,15 +1,15 @@
-$(function() {
-    setTimeout(function() {
+// $(function() {
+//     setTimeout(function() {
 
-        $(".intro").css("display", "none");
-        $("footer").css("display", "block");
-        $(".cardapio").css("display", "block");
-        $(".categoria").css("display", "grid");
-        $(".navegador").css("display", "grid");
+//         $(".intro").css("display", "none");
+//         $("footer").css("display", "block");
+//         $(".cardapio").css("display", "block");
+//         $(".categoria").css("display", "grid");
+//         $(".navegador").css("display", "grid");
 
-        // $("main").css("background-image", " linear-gradient(to bottom, white, rgb(160, 44, 44))");
-    }, 2900);
-});
+//         // $("main").css("background-image", " linear-gradient(to bottom, white, rgb(160, 44, 44))");
+//     }, 2900);
+// });
 
 
 function gelados() {
@@ -47,46 +47,58 @@ function doces() {
 }
 
 contador_pedido = 0;
+quantidade_mais = 10;
 
 
-
-// mostrar = document.getElementById("numero-add");
-
-
-function mais() {
-
+function add_salgados0() {
     var btn_mais = document.getElementsByClassName("btn+");
+
     var mostrar = document.getElementsByClassName("btn-contator");
-
-
-    for (var i = 0; i < mostrar.length; i++) {
-
-
-        $(mostrar[i]).text(contador_pedido++);
+    if (contador_pedido < quantidade_mais) {
+        contador_pedido++;
+        $(mostrar[0]).text(contador_pedido);
+        console.log(btn_mais[1].value);
     }
 
-};
-
-
-
-
-
-
-function menos() {
-
-
-
-    var btn_mais = document.getElementsByClassName("btn+");
-    var mostrar = document.getElementsByClassName("btn-contator");
-
-
-
-    for (var i = 0; i < mostrar.length; i++) {
-
-
-        $(mostrar[i]).text(contador_pedido--);
-    }
 }
+
+function pop_salgados0() {
+    var btn_mais = document.getElementsByClassName("btn+");
+
+    var mostrar = document.getElementsByClassName("btn-contator");
+    if (contador_pedido <= quantidade_mais && contador_pedido > 0) {
+        contador_pedido--;
+        $(mostrar[0]).text(contador_pedido);
+        console.log(btn_mais[1].value);
+    }
+
+}
+
+function add_salgados1() {
+    var btn_mais = document.getElementsByClassName("btn+");
+
+    var mostrar = document.getElementsByClassName("btn-contator");
+    if (contador_pedido < quantidade_mais) {
+        contador_pedido++;
+        $(mostrar[1]).text(contador_pedido);
+
+    }
+
+}
+
+function pop_salgados1() {
+    var btn_mais = document.getElementsByClassName("btn+");
+
+    var mostrar = document.getElementsByClassName("btn-contator");
+    if (contador_pedido <= quantidade_mais && contador_pedido > 0) {
+        contador_pedido--;
+        $(mostrar[1]).text(contador_pedido);
+
+    }
+
+}
+
+
 
 
 
