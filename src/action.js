@@ -46,28 +46,29 @@ function doces() {
     // $(".nometema").css("conte", "block");
 }
 
-contador_pedido = 0;
-quantidade_mais = 10;
 
+
+contador_pedido[2] = 0, 0, 0;
+quantidade_mais = 10;
 
 function add_salgados0() {
     var btn_mais = document.getElementsByClassName("btn+");
-
     var mostrar = document.getElementsByClassName("btn-contator");
+
     if (contador_pedido < quantidade_mais) {
-        contador_pedido++;
+        contador_pedido[0]++;
         $(mostrar[0]).text(contador_pedido);
         console.log(btn_mais[1].value);
     }
 
 }
 
+
 function pop_salgados0() {
     var btn_mais = document.getElementsByClassName("btn+");
-
     var mostrar = document.getElementsByClassName("btn-contator");
     if (contador_pedido <= quantidade_mais && contador_pedido > 0) {
-        contador_pedido--;
+        contador_pedido[0]--;
         $(mostrar[0]).text(contador_pedido);
         console.log(btn_mais[1].value);
     }
