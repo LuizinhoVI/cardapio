@@ -48,16 +48,18 @@ function doces() {
 
 
 
-contador_pedido[2] = 0, 0, 0;
-quantidade_mais = 10;
+
+QTD_COXINHA = [0, 10];
+QTD_PASTEL = [0, 10]
+
 
 function add_salgados0() {
     var btn_mais = document.getElementsByClassName("btn+");
     var mostrar = document.getElementsByClassName("btn-contator");
 
-    if (contador_pedido < quantidade_mais) {
-        contador_pedido[0]++;
-        $(mostrar[0]).text(contador_pedido);
+    if (QTD_COXINHA[0] < QTD_COXINHA[1]) {
+        QTD_COXINHA[0]++;
+        $(mostrar[0]).text(QTD_COXINHA[0]);
         console.log(btn_mais[1].value);
     }
 
@@ -67,9 +69,9 @@ function add_salgados0() {
 function pop_salgados0() {
     var btn_mais = document.getElementsByClassName("btn+");
     var mostrar = document.getElementsByClassName("btn-contator");
-    if (contador_pedido <= quantidade_mais && contador_pedido > 0) {
-        contador_pedido[0]--;
-        $(mostrar[0]).text(contador_pedido);
+    if (QTD_COXINHA[0] <= QTD_COXINHA[1] && QTD_COXINHA[0] > 0) {
+        QTD_COXINHA[0]--;
+        $(mostrar[0]).text(QTD_COXINHA[0]);
         console.log(btn_mais[1].value);
     }
 
