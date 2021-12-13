@@ -53,7 +53,9 @@ QTD_COXINHA = [0, 10];
 QTD_PASTEL = [0, 10]
 
 
-function add_salgados0() {
+
+
+function add_coxinha() {
     var btn_mais = document.getElementsByClassName("btn+");
     var mostrar = document.getElementsByClassName("btn-contator");
 
@@ -65,37 +67,36 @@ function add_salgados0() {
 
 }
 
-
-function pop_salgados0() {
+function pop_coxinha() {
     var btn_mais = document.getElementsByClassName("btn+");
     var mostrar = document.getElementsByClassName("btn-contator");
     if (QTD_COXINHA[0] <= QTD_COXINHA[1] && QTD_COXINHA[0] > 0) {
         QTD_COXINHA[0]--;
         $(mostrar[0]).text(QTD_COXINHA[0]);
-        console.log(btn_mais[1].value);
-    }
-
-}
-
-function add_salgados1() {
-    var btn_mais = document.getElementsByClassName("btn+");
-
-    var mostrar = document.getElementsByClassName("btn-contator");
-    if (contador_pedido < quantidade_mais) {
-        contador_pedido++;
-        $(mostrar[1]).text(contador_pedido);
 
     }
 
 }
 
-function pop_salgados1() {
+function add_pastel() {
     var btn_mais = document.getElementsByClassName("btn+");
 
     var mostrar = document.getElementsByClassName("btn-contator");
-    if (contador_pedido <= quantidade_mais && contador_pedido > 0) {
-        contador_pedido--;
-        $(mostrar[1]).text(contador_pedido);
+    if (QTD_PASTEL[0] < QTD_PASTEL[1]) {
+        QTD_PASTEL[0]++;
+        $(mostrar[1]).text(QTD_PASTEL[0]);
+
+    }
+
+}
+
+function pop_pastel() {
+    var btn_mais = document.getElementsByClassName("btn+");
+
+    var mostrar = document.getElementsByClassName("btn-contator");
+    if (QTD_PASTEL[0] <= QTD_PASTEL[1] && QTD_PASTEL[0] > 0) {
+        QTD_PASTEL[0]--;
+        $(mostrar[1]).text(QTD_PASTEL[0]);
 
     }
 
