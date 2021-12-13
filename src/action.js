@@ -50,7 +50,14 @@ function doces() {
 
 
 QTD_COXINHA = [0, 10];
-QTD_PASTEL = [0, 10]
+QTD_PASTEL = [0, 10];
+//REFRI
+
+QTD_COCA_ = [0, 10];
+QTD_GUARANA = [0, 10];
+QTD_FANTA = [0, 10];
+QTD_SPRIT = [0, 10];
+QTD_PEPSI = [0, 10];
 
 
 
@@ -114,10 +121,10 @@ numero = 1;
 function foto_click() {
 
     if (numero > 0) {
-        $(".foto").css("box-shadow", "0px 5px 5px 0px blue")[2]
+        $(".foto").css("box-shadow", "0px 5px 5px 0px blue")
         numero = 0
     } else {
-        $(".foto").css("box-shadow", "0px 5px 5px 0px black")[2]
+        $(".foto").css("box-shadow", "0px 5px 5px 0px black")
         numero = 1;
     }
 
