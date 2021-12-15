@@ -71,7 +71,6 @@ function add_coxinha() {
         $(mostrar[0]).text(QTD_COXINHA[0]);
         console.log(btn_mais[1].value);
     }
-
 }
 
 function pop_coxinha() {
@@ -98,6 +97,7 @@ function add_pastel() {
 }
 
 function pop_pastel() {
+
     var btn_mais = document.getElementsByClassName("btn+");
 
     var mostrar = document.getElementsByClassName("btn-contator");
@@ -127,6 +127,5 @@ function foto_click() {
         $(".foto").css("box-shadow", "0px 5px 5px 0px black")
         numero = 1;
     }
-
 
 }

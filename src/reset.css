@@ -211,6 +211,9 @@ footer>p {
     .foto {
         width: 20vw;
     }
+    .foto:hover {
+        box-shadow: 0px 5px 5px 0px blue;
+    }
     .produtos>div>p {
         font-size: 2vw;
         top: 10px;
