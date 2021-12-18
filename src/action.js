@@ -52,7 +52,6 @@ function doces() {
 QTD_COXINHA = [0, 10];
 QTD_PASTEL = [0, 10];
 //REFRI
-
 QTD_COCA_ = [0, 10];
 QTD_GUARANA = [0, 10];
 QTD_FANTA = [0, 10];
