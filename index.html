@@ -29,18 +29,18 @@
 
     <main>
 
-        <section align="center" class="intro" style="display: none; ">
+        <section align="center" class="intro" style="display: block; ">
             <div>
                 BEM VINDO
             </div>
         </section>
 
-        <section align="center " class="cardapio" style="display: ; ">
-            <div style="display:grid;" class="navegador">
+        <section align="center " class="cardapio" style="display: grid; ">
+            <div style="display:none;" class="navegador">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid ">
-                        <a class="navbar-brand " href="#">CODE PRO...</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="navbar-brand " href="#" onclick="mostrar_menu()">CODE PRO...</a>
+                        <button class="navbar-toggler dropdown " onclick="" type="button" data-bs-toggle="collapse " id="dropdownMenuLink" data-bs-target="#navbarNavDropdown " aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -157,14 +157,17 @@ suco
             </div>
 
             <!-- mfoto tema do cardapio  -->
-            <div class="fototema" style="display:  block;">
+            <div class="fototema" style="display:  none;">
 
                 <div style="background-color: white; display: none;">
-                    <img src="src/img/refri/bebida.gif" class="foto" class="nome-categoria" width="150" alt="">
+                    <img src="src/img/refri/bebida.gif" class="nome-categoria foto" width="150" alt="">
                 </div>
 
-                <div style="background-color: white;">
-                    <img src="src/img/salgados/salgado.gif" class="foto" class="nome-categoria" width="150" alt="">
+                <div style="background-color: white;display: none;">
+                    <img src="src/img/salgados/salgado.gif" class="nome-categoria foto" width="150" alt="">
+                </div>
+                <div style="background-color: white;display: none;">
+                    <img src="src/img/salgados/" class="nome-categoria  foto" width="150" alt="">
                 </div>
 
             </div>
@@ -196,529 +199,532 @@ suco
                 </div>
 
                 <!-- produtos--------------------------------------------- -->
-                <div class="produtos salgados" style="display:grid;">
-                    <div class="zom">
-                        <img src="src/img/salgados/coxinha.png" class="foto" alt="">
-                        <p for="">coxinha </p>
-                        <div>
+                <div class="mostrar">
 
-                            <div class="mais-e-menos">
-                                <button type="button" id="btn+" onclick="add_coxinha()" class="btn btn+ btn-outline-primary" value="1">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="pop_coxinha()" id="btn-" class="btn btn-outline-danger">-</button>
+
+                    <div class="produtos salgados" style="display:none;">
+                        <div class="zom">
+                            <img src="src/img/salgados/coxinha.png" class="foto" alt="">
+                            <p for="">coxinha </p>
+                            <div>
+
+                                <div class="mais-e-menos">
+                                    <button type="button" id="btn+" onclick="add_coxinha()" class="btn btn+ btn-outline-primary" value="1">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="pop_coxinha()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <select name="" id="">
+
+<option value="" align="center" disabled selected>Sabor</option>
+<option value="t" align="center">Frango</option>
+<option value="" align="center">Carne</option>
+
+</select>
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
                             </div>
-                            <div class="escolha">
-                                <select name="" id="">
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/salgados/pastel.png" class="foto" alt="">/
+                            <p for="">pastel </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="add_pastel()" id="btn+" class="btn btn+ btn-outline-primary" value="2">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="pop_pastel()" id="btn-" class="btn btn- btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <select name="" id="">
 
-                                    <option value="" align="center" disabled selected>Sabor</option>
-                                    <option value="t" align="center">Frango</option>
-                                    <option value="" align="center">Carne</option>
-    
-                                    </select>
-                                <br>
+<option value="" align="center" disabled selected>Sabor</option>
+<option value="t" align="center">Frango</option>
+<option value="" align="center">Carne</option>
+
+</select>
+                                </div>
                                 <button type="button" id="btn" class="btn btn-primary">Pedir</button>
                             </div>
-
                         </div>
                     </div>
-                    <div class="zom">
-                        <img src="src/img/salgados/pastel.png" class="foto" alt="">/
-                        <p for="">pastel </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="add_pastel()" id="btn+" class="btn btn+ btn-outline-primary" value="2">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="pop_pastel()" id="btn-" class="btn btn- btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <select name="" id="">
 
-                                <option value="" align="center" disabled selected>Sabor</option>
-                                <option value="t" align="center">Frango</option>
-                                <option value="" align="center">Carne</option>
 
-                                </select>
+                    <div class="produtos gelados" style="display: none;">
+
+                        <div class="zom">
+                            <img src="src/img/sorvete/Brigadeiro.webp" class="foto" alt="">
+                            <p for="">Brigadeiro</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="3">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
                             </div>
-                            <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+
                         </div>
+                        <div class="zom">
+                            <img src="src/img/sorvete/chicabon.webp" class="foto" alt="">
+                            <p for="">chicabon</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="7">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/sorvete/Eskibon Clássico.webp" class="foto" alt="">
+                            <p for=""> Eskibon Clássico </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/sorvete/Kibonbon Coco.webp" class="foto" alt="">
+                            <p for="">Kibonbon Coco </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="4">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/sorvete/Kibonbon Morango.webp" class="foto" alt="">
+                            <p for="">Kibonbon Morango </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="4">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/sorvete/Mini Eskibon.webp" class="foto" alt="">
+                            <p for="">Mini Eskibon </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="5">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="zom">
+                            <img src="src/img/sorvete/Mini Eskibon.webp" class="foto" alt="">
+                            <p for="">Mini Eskibon </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="6">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="zom">
+                            <img src="src/img/sorvete/sorvete de casquinha.png" class="foto" alt="">
+                            <p for="">sorvete de casquinha </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="7">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="produtos refri" style="display: none;">
+
+                        <div class="zom" onclick="foto_click()">
+                            <img src="src/img/refri/coca cola.png" class="foto" alt="">
+                            <p for="">cocacola 1L</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="8">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/fanta.jpg" class="foto" alt="">
+                            <p for="">fanta 1L</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="9">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="zom">
+                            <img src="src/img/refri/guarana.png" class="foto" alt="">
+                            <p for="">guarana 1L</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="10">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="zom">
+                            <img src="src/img/refri/sprit.png" class="foto" alt="">
+                            <p for="">Sprit 1L</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="zom">
+                            <img src="src/img/refri/pepsi.jpg" class="foto" alt="">
+                            <p for="">Pepsi 1L </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/fantauva.jpg" class="foto" alt="">
+                            <p for="">fanta uva 1L </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="zom">
+                            <img src="src/img/refri/coca cola lata.jpg" class="foto" alt="">
+                            <p for="">coca cola 350ml </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="zom">
+                            <img src="src/img/refri/fanta lata.jpg" class="foto" alt="">
+                            <p for="">fanta 350ml</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/guaranan lata.jpg" class="foto" alt="">
+                            <p for="">guaranan 350ml </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/pepsi lata.jpg" class="foto" alt="">
+                            <p for="">pepsi 350ml </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/fanta uva latinha.jpg" class="foto" alt="">
+                            <p for="">fanta uva 350ml </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+
+                            <img src="src/img/refri/sprit lata.png" class="foto" alt="">
+
+                            <p for="">sprit 350ml</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+
+                            <img src="src/img/refri/suco de maçã.png" class="foto" alt="">
+
+                            <p for="">suco de maçã 250ml</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/suco de laranja.png" class="foto" alt="">
+                            <p for="">suco de laranja 250ml </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/suco de  goiaba.png" class="foto" alt="">
+                            <p for="">suco de goiaba 250ml</p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/antarctica.png" class="foto" alt="">
+                            <p for="">antarctica 1L </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/Balde-de-Cerveja.png" class="foto" alt="">
+                            <p for="">Balde de Cerveja </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="zom">
+                            <img src="src/img/refri/crystal.png" class="foto" alt="">
+                            <p for="">crystal 1L </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/café.png" class="foto" alt="">
+                            <p for="">café 1L </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="zom">
+                            <img src="src/img/refri/de valle.png" class="foto" alt="">
+                            <p for="">del valle maracujá 290ml </p>
+                            <div>
+                                <div class="mais-e-menos">
+                                    <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
+                                    <p id="numero-add" class="btn-contator btn"> 0 </p>
+                                    <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
+                                </div>
+                                <div class="escolha">
+                                    <br>
+                                    <button type="button" id="btn" class="btn btn-primary">Pedir</button>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-                </div>
-                <div class="produtos gelados" style="display: none;">
-
-                    <div class="zom">
-                        <img src="src/img/sorvete/Brigadeiro.webp" class="foto" alt="">
-                        <p for="">Brigadeiro</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="3">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/sorvete/chicabon.webp" class="foto" alt="">
-                        <p for="">chicabon</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="7">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/sorvete/Eskibon Clássico.webp" class="foto" alt="">
-                        <p for=""> Eskibon Clássico </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/sorvete/Kibonbon Coco.webp" class="foto" alt="">
-                        <p for="">Kibonbon Coco </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="4">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/sorvete/Kibonbon Morango.webp" class="foto" alt="">
-                        <p for="">Kibonbon Morango </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="4">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/sorvete/Mini Eskibon.webp" class="foto" alt="">
-                        <p for="">Mini Eskibon </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="5">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="zom">
-                        <img src="src/img/sorvete/Mini Eskibon.webp" class="foto" alt="">
-                        <p for="">Mini Eskibon </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="6">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="zom">
-                        <img src="src/img/sorvete/sorvete de casquinha.png" class="foto" alt="">
-                        <p for="">sorvete de casquinha </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="7">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="produtos refri" style="display: none;">
-
-                    <div class="zom" onclick="foto_click()">
-                        <img src="src/img/refri/coca cola.png" class="foto" alt="">
-                        <p for="">cocacola 1L</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="8">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/fanta.jpg" class="foto" alt="">
-                        <p for="">fanta 1L</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="9">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="zom">
-                        <img src="src/img/refri/guarana.png" class="foto" alt="">
-                        <p for="">guarana 1L</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary" value="10">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="zom">
-                        <img src="src/img/refri/sprit.png" class="foto" alt="">
-                        <p for="">Sprit 1L</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="zom">
-                        <img src="src/img/refri/pepsi.jpg" class="foto" alt="">
-                        <p for="">Pepsi 1L </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/fantauva.jpg" class="foto" alt="">
-                        <p for="">fanta uva 1L </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="zom">
-                        <img src="src/img/refri/coca cola lata.jpg" class="foto" alt="">
-                        <p for="">coca cola 350ml </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="zom">
-                        <img src="src/img/refri/fanta lata.jpg" class="foto" alt="">
-                        <p for="">fanta 350ml</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/guaranan lata.jpg" class="foto" alt="">
-                        <p for="">guaranan 350ml </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/pepsi lata.jpg" class="foto" alt="">
-                        <p for="">pepsi 350ml </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/fanta uva latinha.jpg" class="foto" alt="">
-                        <p for="">fanta uva 350ml </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-
-                        <img src="src/img/refri/sprit lata.png" class="foto" alt="">
-
-                        <p for="">sprit 350ml</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-
-                        <img src="src/img/refri/suco de maçã.png" class="foto" alt="">
-
-                        <p for="">suco de maçã 250ml</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/suco de laranja.png" class="foto" alt="">
-                        <p for="">suco de laranja 250ml </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/suco de  goiaba.png" class="foto" alt="">
-                        <p for="">suco de goiaba 250ml</p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/antarctica.png" class="foto" alt="">
-                        <p for="">antarctica 1L </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/Balde-de-Cerveja.png" class="foto" alt="">
-                        <p for="">Balde de Cerveja </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="zom">
-                        <img src="src/img/refri/crystal.png" class="foto" alt="">
-                        <p for="">crystal 1L </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/café.png" class="foto" alt="">
-                        <p for="">café 1L </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zom">
-                        <img src="src/img/refri/de valle.png" class="foto" alt="">
-                        <p for="">del valle maracujá 290ml </p>
-                        <div>
-                            <div class="mais-e-menos">
-                                <button type="button" onclick="mais()" id="btn+" class="btn btn+ btn-outline-primary">+</button>
-                                <p id="numero-add" class="btn-contator btn"> 0 </p>
-                                <button type="button" onclick="menos()" id="btn-" class="btn btn-outline-danger">-</button>
-                            </div>
-                            <div class="escolha">
-                                <br>
-                                <button type="button" id="btn" class="btn btn-primary">Pedir</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
             </nav>
 
         </section>

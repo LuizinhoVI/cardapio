@@ -1,15 +1,15 @@
-// $(function() {
-//     setTimeout(function() {
+$(function() {
+    setTimeout(function() {
 
-//         $(".intro").css("display", "none");
-//         $("footer").css("display", "block");
-//         $(".cardapio").css("display", "block");
-//         $(".categoria").css("display", "grid");
-//         $(".navegador").css("display", "grid");
+        $(".intro").css("display", "none");
+        $("footer").css("display", "block");
+        $(".cardapio").css("display", "block");
+        $(".categoria").css("display", "grid");
+        $(".navegador").css("display", "grid");
 
-//         // $("main").css("background-image", " linear-gradient(to bottom, white, rgb(160, 44, 44))");
-//     }, 2900);
-// });
+        // $("main").css("background-image", " linear-gradient(to bottom, white, rgb(160, 44, 44))");
+    }, 2900);
+});
 
 
 function gelados() {
@@ -25,7 +25,7 @@ function refri() {
     // $("body").css("background", "red");
     $(".refri").css("color", "black");
     $(".categoria").css("display", "none");
-    $(".nometema").css("display", "block");
+    // $(".nometema").css("display", "block");
 }
 
 function salgados() {
@@ -104,6 +104,18 @@ function pop_pastel() {
         $(mostrar[1]).text(QTD_PASTEL[0]);
 
     }
+
+}
+
+function mostrar_menu() {
+
+    var mostrar = document.getElementsByClassName("categoria");
+    var mostrar1 = document.getElementsByClassName("mostrar");
+
+
+    $(mostrar1).css("display", "none");
+    $(mostrar).css("display", "grid");
+
 
 }
 
