@@ -60,7 +60,6 @@ QTD_PEPSI = [0, 10];
 
 
 
-
 function add_coxinha() {
     var btn_mais = document.getElementsByClassName("btn+");
     var mostrar = document.getElementsByClassName("btn-contator");
